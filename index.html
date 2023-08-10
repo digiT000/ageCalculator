@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="background-primary">
+
+  <main class="centerContainer">
+    <section class="container">
+      <div class="contentContainer background-secondary">
+        <div class="form mb-5">
+          <div class="input">
+            <label class="labelInput mb-2" for="day">DAY</label>
+            <input class="inputField mb-1" type="number" name="day" id="inputDay" placeholder="DD">
+            <label class="messageError errorDay hidden" for="day">'Error Message'</label>
+          </div>
+          <div class="input">
+            <label class="labelInput mb-2" for="month">MONTH</label>
+            <input class="inputField mb-1" type="number" name="month" id="inputMonth" placeholder="MM">
+            <label class="messageError errorMonth hidden" for="day">'Error Message'</label>
+          </div>
+          <div class="input">
+            <label class="labelInput mb-2" for="year">YEAR</label>
+            <input class="inputField mb-1" type="number" name="year" id="inputYear" placeholder="YYYY">
+            <label class="messageError errorYear hidden" for="day">'Error Message'</label>
+          </div>
+        </div>
+        <div class="actionContainer mb-5">
+          <hr class="horizontalLine">
+          <button class="primaryButton submit" type="submit">
+            <div class="imgContainer">
+              <img src="assets/images/icon-arrow.svg" alt="">
+            </div>
+          </button>
+      
+        </div>
+        <h1 class="header"><span class="result" id="valueYear">--</span> Years</h1>
+        <h1 class="header"><span class="result" id="valueMonth">--</span> months</h1>
+        <h1 class="header"><span class="result" id="valueDay">--</span> days</h1>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
