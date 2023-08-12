@@ -27,7 +27,7 @@ const listMonth = {
 }
 
 const currentDay = new Date().getDate()
-const currentMonth = new Date().getMonth();
+const currentMonth = new Date().getMonth()+1;
 const currnetYear = new Date().getFullYear();
 
 function showError(errorType){
@@ -42,7 +42,7 @@ function calcAge(){
     let yearErrorTrue = 0;
 
     let inputDay = Number(day.value);
-    let inputMonth = Number(month.value)+1;
+    let inputMonth = Number(month.value);
     let inputYear = Number(year.value)
 
     if(day.value === '' ){
