@@ -42,7 +42,7 @@ function calcAge(){
     let yearErrorTrue = 0;
 
     let inputDay = Number(day.value);
-    let inputMonth = Number(month.value);
+    let inputMonth = Number(month.value)+1;
     let inputYear = Number(year.value)
 
     if(day.value === '' ){
@@ -103,7 +103,7 @@ function calcAge(){
     //RESULT---
     if(dayErrorTrue === 0 && monthErrorTrue === 0 && yearErrorTrue === 0){
         if(currentDay < inputDay){
-            inputMonth--;
+            inputMonth++;
             inputDay = currentDay - inputDay + 31;
             resultDay.textContent = inputDay; 
         }
@@ -113,7 +113,7 @@ function calcAge(){
         }
 
         if(currentMonth < inputMonth){
-            inputYear--;
+            inputYear++;
             inputMonth = currentMonth - inputMonth + 12; 
             resultMonth.textContent = inputMonth
         }
